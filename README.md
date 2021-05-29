@@ -107,7 +107,7 @@ The All example trains 7 seperate neural networks to perform the AND, NAND, NOR,
 
 #### Scaling Data
 
-This example uses the XOR dataset with negative one represented as zero and one represented as one-hundred and demonstrate how to scale those values so that FANN can understand them and then how to de-scale the value FANN returns so that you can understand them.
+This example uses the XOR dataset with negative one represented as zero and one represented as one-hundred and demonstrates how to scale those values so that FANN can understand them and then how to de-scale the value FANN returns so that you can understand it.
 
 * Scaling allows you to take raw data numbers like -1234.975 or 4502012 in your dataset and convert them into an input/output range that your neural network can understand. 
 
