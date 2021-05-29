@@ -20,6 +20,8 @@ $ sudo apt-get install libfann-dev
 ```
 Fann installation can be skipped if an RPM for Fedora is used (`libfann` is in the package dependencies).
 
+If the library is re-installed manually, then all old library file should be removed before re-installing otherwise the old library version could be linked.
+
 #### Fedora
 
 The RPM package for PHP FANN is available in Remi's repository: http://rpms.famillecollet.com/
@@ -57,6 +59,12 @@ phpize
 make
 sudo make install
 ```
+
+If you are rebuilding the extension and see warning about Libtool version mismatch error, try to run `phpize --clean` or if it doesn't help, try
+```
+aclocal && libtoolize --force && autoreconf
+```
+and then run the compilation steps starting with `phpize` again.
 
 Finally you need to add
 ```
