@@ -113,7 +113,7 @@ This example uses the XOR dataset with negative one represented as zero and one 
 
 * De-scaling lets you take the scaled data and convert it back into the original range.
 
-[ScaledXOR.php](examples/ScalingData/ScaledXOR.php)
+[scaled_xor.php](examples/ScalingData/scaled_xor.php)
 
 [scale_test.data](examples/ScalingData/scale_test.data)
 
