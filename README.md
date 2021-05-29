@@ -70,7 +70,7 @@ Precompiled binary `dll` libraries for php-fann and libfann are available on [th
 
 ## Examples
 
-There are three example projects: [Logic Gates](examples/logic_gates/), [OCR](examples/ocr/) & [Pathfinder](examples/pathfinder/).
+There are four example projects: [Logic Gates](examples/logic_gates/), [Scaling Data](examples/ScalingData/), [OCR](examples/ocr/) & [Pathfinder](examples/pathfinder/).
 
 #### Logic Gates
 
@@ -94,6 +94,21 @@ The All example trains 7 seperate neural networks to perform the AND, NAND, NOR,
 [train_all.php](examples/logic_gates/train_all.php)
 
 [test_all.php](examples/logic_gates/test_all.php)
+
+
+
+#### Scaling Data
+
+This example uses the XOR dataset with negative one represented as zero and one represented as one-hundred and demonstrate how to scale those values so that FANN can understand them and then how to de-scale the value FANN returns so that you can understand them.
+
+* Scaling allows you to take raw data numbers like -1234.975 or 4502012 in your dataset and convert them into an input/output range that your neural network can understand. 
+
+* De-scaling lets you take the scaled data and convert it back into the original range.
+
+[ScaledXOR.php](examples/ScalingData/ScaledXOR.php)
+
+[scale_test.data](examples/ScalingData/scale_test.data)
+
 
 
 #### OCR
